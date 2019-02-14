@@ -1,18 +1,19 @@
 require "pry"
 
 def get_first_name_of_season_winner(data, season)
-  winner = []
+  winner = ""
   data.each do |data_season, contestant|
     if season == data_season
       contestant.each do |attribute, value|
 binding.pry
         if attribute["status"] == "winner"
-          winner << attribute["name"]
+          winner = attribute["name"]
         end
       end
     end
   end
-winner
+winner_array = winner.split(" ")
+winner_array[0]
 end
 
 def get_contestant_name(data, occupation)
