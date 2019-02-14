@@ -8,7 +8,6 @@ def get_first_name_of_season_winner(data, season)
         if attribute["status"] == "winner"
           winner = attribute["name"]
 binding.pry
-
         end
       end
     end
