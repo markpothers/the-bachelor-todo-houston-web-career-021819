@@ -9,6 +9,7 @@ binding.pry
         end
       end
     end
+  end
   winner
 end
 
