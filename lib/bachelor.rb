@@ -6,10 +6,10 @@ def get_first_name_of_season_winner(data, season)
       contestant.each do |attribute, value|
         if value["status"] == "winner"
           winner << value["name"]
-        end  
+        end
       end
     end
-  winner  
+  winner
 end
 
 def get_contestant_name(data, occupation)
