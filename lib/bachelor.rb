@@ -7,12 +7,12 @@ def get_first_name_of_season_winner(data, season)
       contestant.each do |attribute, value|
         if attribute["status"] == "winner"
           winner = attribute["name"]
+          winner_array = winner.split(" ")
 binding.pry
         end
       end
     end
   end
-winner_array = winner.split(" ")
 winner_array[0]
 end
 
