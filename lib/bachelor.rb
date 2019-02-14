@@ -10,7 +10,7 @@ binding.pry
       end
     end
   end
-  winner
+winner
 end
 
 def get_contestant_name(data, occupation)
